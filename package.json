@@ -3,13 +3,14 @@
   "private": true,
   "version": "0.0.0",
   "type": "module",
-"scripts": {
+  "scripts": {
   "dev": "concurrently \"npm run server\" \"npm run client\"",
   "server": "nodemon server.js",
   "client": "vite",
-  "build": "vite build",
+  "build": "cd client && vite build",
   "lint": "eslint .",
-  "preview": "vite preview"
+  "preview": "vite preview",
+  "start": "node server.js"
 },
   "dependencies": {
     "@emotion/react": "^11.14.0",
